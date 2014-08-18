@@ -1,11 +1,11 @@
 ---
 ---
 
-@import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Source+Code+Pro);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:700|Roboto:400italic,400,300,700|Source+Code+Pro);
 
 $background: #ffffff;
 $dark-background: rgba(45, 45, 45, .9);
-$body-color: rgba(0, 0, 0, .9);
+$body-color: rgb(64, 64, 64);
 
 // responsiveness
 @mixin breakpoint($point) {
@@ -33,13 +33,15 @@ $body-color: rgba(0, 0, 0, .9);
 }
 
 @import "highlight";
+@import "gridism";
 @import "normalize";
 
 body {
   background-color: $background;
   color: $body-color;
-  font-family: 'Open Sans', helvetica, arial;
+  font-family: 'Roboto', helvetica, arial;
   font-size: 1.2em;
+  font-weight: 300;
 }
 
 // header
@@ -51,8 +53,16 @@ header {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 25px;
-    border-bottom: 1px solid rgba(220, 220, 220, 1);
+    border-bottom: 1px solid rgb(200, 200, 200);
   }
+}
+
+.logo {
+  display: block;
+  width: 175px;
+  height: 175px;
+  margin: 0 auto 2em auto;
+  border-radius: 50%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -71,7 +81,7 @@ h1 {
 h2 {
   font-size: 50px;
   @include breakpoint(baby-bear) { font-size: 30px; }
-  color: rgba(75, 75, 75, 1);
+  color: rgb(75, 75, 75);
 }
 
 .tagline {
@@ -147,11 +157,13 @@ nav.mobile-nav {
 }
 
 // code
+$code-font: 'Source Code Pro', monospace, courier;
 code {
-  font-family: 'Source Code Pro', monospace, courier;
+  font-family: $code-font;
 }
 
 pre {
+  font-family: $code-font;
   font-size: 15px;
   line-height: 19px;
   margin: 0 10%;
@@ -177,10 +189,10 @@ p, .content ul {
 
 .content p {
   a {
-    color: #aaa;
-    border-bottom: 1px dashed #424242;
+    color: rgba(100, 100, 100, .9);
+    font-weight: 700;
     transition: .3s all;
 
-    &:hover { color: #444 !important; }
+    &:hover { color: rgba(100, 150, 100, 1) !important; }
   }
 }
