@@ -10,37 +10,8 @@ title: Shoes!
 </header>
 
 {% highlight ruby %}
-Shoes.app(title: "Welcome to Shoes!", width: 600, height: 400) do
-  stack margin: 10 do
-    stack margin: 10 do
-      background gainsboro
-      subtitle "Ever wanted to build a GUI?"
-      tagline "Annoyed that it's so much effort?"
-    end
-
-    flow do
-      buttons = {
-        search: "Search Stuff",
-        printer: "Print Page",
-        notes: "Open Notes",
-        photo: "Get Photo",
-        bluray: "Burn Disk"
-      }
-
-      buttons.each do |k, v|
-        stack width: 100 do
-          para value
-        end
-      end
-    end
-
-    stack margin: 10 do
-      background gainsboro
-      para "I just want to build..."
-      list_box items: ["my own twitter gui", "my own music player", "a time machine"]
-      button "No problemo, let's go!"
-    end
-  end
+Shoes.app(title: "Welcome to Shoes!") do
+  para "Hello, world!"
 end
 {% endhighlight %}
 
