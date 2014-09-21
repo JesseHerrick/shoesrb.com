@@ -33,8 +33,7 @@ $body-color: rgb(64, 64, 64);
 }
 
 @import "highlight";
-@import "gridism";
-@import "normalize";
+@import "reset";
 
 body {
   background-color: $background;
