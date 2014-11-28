@@ -169,13 +169,17 @@ pre {
   margin: 0 10%;
   padding: 30px;
   background: $dark-background;
-  overflow-x: scroll;
-  border-radius: 10px;
+  overflow-x: auto;
+  border-radius: 6px;
 }
 
 // body
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 p, .content ul {
@@ -192,7 +196,14 @@ p, .content ul {
     color: rgba(100, 100, 100, .9);
     font-weight: 700;
     transition: .3s all;
+    text-decoration: underline;
 
     &:hover { color: rgba(100, 150, 100, 1) !important; }
   }
+}
+
+// code example
+.example {
+  margin-top: 50px;
+  @include breakpoint(goldilocks) { margin-top: 20px };
 }
