@@ -207,3 +207,21 @@ p, .content ul {
   margin-top: 50px;
   @include breakpoint(goldilocks) { margin-top: 20px };
 }
+
+// contributors page
+#contributors {
+  ul {
+    display: block;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      float: right;
+    }
+  }
+
+  img.contrib-avatar {
+    width: 125px;
+    height: 125px;
+  }
+}
