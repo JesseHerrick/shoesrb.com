@@ -143,6 +143,7 @@ nav.mobile-nav {
       width: 16.66%;
       font-size: 14px;
       font-weight: 700;
+      a { color: rgba(75, 75, 75, .85); }
 
       $transition: .3s background ease-in-out;
       transition: $transition;
