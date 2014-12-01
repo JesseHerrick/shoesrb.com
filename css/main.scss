@@ -211,13 +211,18 @@ p, .content ul {
 
 // contributors page
 #contributors {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
   ul {
-    display: block;
     list-style: none;
 
     li {
-      display: inline-block;
-      float: right;
+      display: block;
+      float: left;
+      width: 20%;
+      @include breakpoint(baby-bear) { width: 50% }
     }
   }
 
