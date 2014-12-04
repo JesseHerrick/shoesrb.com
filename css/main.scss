@@ -232,6 +232,7 @@ p, .content ul {
       height: auto;
       width: 250px;
       @include breakpoint(baby-bear) { width: 200px; }
+      margin-bottom: 20px;
       text-align: center;
 
       img {
