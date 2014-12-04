@@ -5,8 +5,8 @@ The website for [shoes!](https://github.com/shoes/shoes)
 ## Getting going
 
 ```
-$ gem install jekyll
-$ jekyll serve
+$ bundle install
+$ bundle exec jekyll serve
 $ open http://localhost:4000
 ```
 
