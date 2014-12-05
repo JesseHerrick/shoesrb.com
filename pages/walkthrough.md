@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Shoes! The Tutorial Walkthrough
+permalink: /walkthrough/
 ---
 
 Hello!
