@@ -109,6 +109,7 @@ nav {
         color: rgba(75, 75, 75, .85);
         font-size: 14px;
         font-weight: 700;
+        text-decoration: none !important;
         padding: 18px;
         display: block;
         $transition: .3s background ease-in-out;
@@ -192,6 +193,17 @@ p, .content ul {
   li { font-size: .9em; }
 }
 
+li {
+  a {
+    color: rgba(100, 100, 100, .9);
+    font-weight: 700;
+    transition: .3s all;
+    text-decoration: underline;
+
+    &:hover { color: rgba(100, 150, 100, 1) !important; }
+  }
+}
+
 .content p {
   a {
     color: rgba(100, 100, 100, .9);
@@ -230,9 +242,9 @@ p, .content ul {
     li {
       list-style: none;
       height: auto;
-      width: 250px;
-      @include breakpoint(baby-bear) { width: 200px; }
-      margin-bottom: 20px;
+      width: 150px;
+      @include breakpoint(baby-bear) { width: 100px }
+      margin: 10px 10px 20px 10px;
       text-align: center;
 
       img {
