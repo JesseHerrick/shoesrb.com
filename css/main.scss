@@ -238,6 +238,10 @@ p, .content ul {
       img {
         margin-left: auto;
         margin-right: auto;
+        -webkit-filter: blur(1.5px);
+        -webkit-transition: .25s all ease;
+
+        &:hover { -webkit-filter: blur(0px); }
       }
     }
   }

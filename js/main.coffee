@@ -14,6 +14,6 @@ loadContributors = (github) ->
     avatar = contributor.avatar_url
     contributions = contributor.contributions
 
-    list.append("<li><img class=\"contrib-avatar\" src=\"#{avatar}\"><a href=\"https://github.com/#{username}\">#{username}</a> (#{contributions})</li>")
+    list.append("<li><a href=\"https://github.com/#{username}/\"><img class=\"contrib-avatar\" src=\"#{avatar}\"><a href=\"https://github.com/#{username}/\">#{username}</a> (#{contributions})</li>")
 
 $.getJSON 'https://api.github.com/repos/shoes/shoes4/contributors', (data) -> loadContributors(data)
